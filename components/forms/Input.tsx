@@ -31,6 +31,7 @@ export default function Input({
             autoFocus={autoFocus}
             error={error}
             helperText={helperText}
+            sx={{ mb: { xs: 1, sm: 2 } }}
         />
     );
 }

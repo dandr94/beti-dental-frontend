@@ -23,6 +23,7 @@ export default function Layout({
                     variant="h5"
                     align="center"
                     gutterBottom
+                    sx={{ fontSize: { xs: "1.5rem", sm: "2rem" } }}
                 >
                     {title}
                 </Typography>
@@ -44,7 +45,13 @@ export default function Layout({
                 type="submit"
                 fullWidth
                 variant="contained"
-                sx={{ mt: 4, mb: 2, py: 2, fontSize: "1.2rem" }}
+                sx={{
+                    mt: 4,
+                    mb: 2,
+                    py: 2,
+                    fontSize: { xs: "1rem", sm: "1.2rem" },
+                    height: "56px",
+                }}
             >
                 {isLoading ? <LoadingSpinner /> : buttonText}
             </Button>
