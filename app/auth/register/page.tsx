@@ -1,7 +1,7 @@
 "use client";
 
 import { AgreementMessage, Fields, Layout } from "@/components/forms";
-import PageLayout from "@/components/forms/PageLayout";
+import { PageLayout } from "@/components/forms";
 import { useRegister } from "@/hooks";
 
 export default function Page() {

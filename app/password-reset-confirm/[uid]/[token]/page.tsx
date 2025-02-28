@@ -1,7 +1,7 @@
 "use client";
 
 import { Fields, Layout } from "@/components/forms";
-import PageLayout from "@/components/forms/PageLayout";
+import { PageLayout } from "@/components/forms";
 import { useParams } from "next/navigation";
 import { useResetPasswordConfirm } from "@/hooks";
 import { UIDTokenProps } from "@/interface/auth";
