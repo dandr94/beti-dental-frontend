@@ -19,3 +19,10 @@ export interface EditUserModalProps {
     };
     onUserUpdated: () => void;
 }
+
+export interface BookingModalProps {
+    open: boolean;
+    onClose: () => void;
+    timeSlot: string;
+    appointment_slot: string;
+}
