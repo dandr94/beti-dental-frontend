@@ -1,5 +1,5 @@
 import { Stack, Box } from "@mui/material";
-import Input from "./Input";
+import { Input } from "@/components/forms/";
 import { FieldsProps } from "@/interface/forms";
 
 export default function Fields({ fields, handleChange, fieldErrors }: FieldsProps & {

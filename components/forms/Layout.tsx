@@ -1,5 +1,5 @@
 import { Box, Stack, Typography, Button, Divider } from "@mui/material";
-import FormLinkMessage from "./LinkMessage";
+import { LinkMessage as FormLinkMessage } from "@/components/forms";
 import { LoadingSpinner } from "../common";
 import { LayoutProps } from "@/interface/forms";
 

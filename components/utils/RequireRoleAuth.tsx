@@ -4,11 +4,8 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import CircularProgress from "@mui/material/CircularProgress";
 import { isAuthenticated } from "@/utils/auth";
+import { RequireRoleAuthProps } from "@/interface/auth";
 
-interface RequireRoleAuthProps {
-    children: React.ReactNode;
-    allowedRoles: string[];
-}
 
 export default function RequireRoleAuth({ children, allowedRoles }: RequireRoleAuthProps) {
     const router = useRouter();
@@ -23,7 +20,7 @@ export default function RequireRoleAuth({ children, allowedRoles }: RequireRoleA
                 return;
             }
 
-            const role = userData.role
+            const role = userData.role;
             if (allowedRoles.includes("all") || allowedRoles.includes(role)) {
                 setAuthorized(true);
             } else {
