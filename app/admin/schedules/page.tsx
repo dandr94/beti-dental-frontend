@@ -80,12 +80,12 @@ export default function AdminCalendar() {
                                     <AdminDayDetails
                                         day={day}
                                         details={calendarData[getDateKey(currentDate, day)]}
-                                        onToggleWorking={handleToggleWorking}
-                                        onChangeTime={handleChangeTime}
-                                        onRemoveTime={handleRemoveTime}
-                                        onApplyPreset={handleApplyPreset}
-                                        onAddTimeIncrement={handleAddTimeIncrement}
-                                        onAddCustomTime={handleAddCustomTime}
+                                        onToggleWorkingAction={handleToggleWorking}
+                                        onChangeTimeAction={handleChangeTime}
+                                        onRemoveTimeAction={handleRemoveTime}
+                                        onApplyPresetAction={handleApplyPreset}
+                                        onAddTimeIncrementAction={handleAddTimeIncrement}
+                                        onAddCustomTimeAction={handleAddCustomTime}
                                     />
                                 )}
                                 getCellBgColor={getCellBgColor}
