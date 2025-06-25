@@ -8,7 +8,17 @@ appointments, schedules, and users.
 
 > ⚠️ **Work in Progress**
 >
-> This project is still under development. Some features are incomplete, and parts of the codebase and file structure may require further cleanup and organization.
+> This project is still under development. Some features are incomplete, and parts of the codebase and file structure
+> may require further cleanup and organization.
+
+---
+
+## 🔗 Related Repositories
+
+The **Beti Dental Backend** is built with **Django** and **Django REST Framework**.  
+It handles authentication, scheduling, role-based access, and API services.
+
+[Beti Dental Backend Repository](https://github.com/dandr94/beti-dental-backend)
 
 ---
 
