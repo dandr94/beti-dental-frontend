@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🦷 Beti Dental Web App — Frontend
 
-## Getting Started
+This repository contains the **frontend** for the Beti Dental web application, built using **Next.js** and **Material
+UI (MUI)**. It provides an interactive and responsive user interface for both patients and admins to manage dental
+appointments, schedules, and users.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🧠 Overview of Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js**.
+- **Material UI (MUI)**
+- **Axios** for API calls
+- **Framer Motion** for animations
+- **JWT Auth** via HTTP-only cookies
+- **Integrated with Django REST API** for authentication, user management, and scheduling.
+- **Role-based navigation:** Dynamic content based on whether you're an admin, dentist, or patient.
+- **Custom calendar and scheduling logic**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎯 Core Features
 
-## Learn More
+### 🧑 Patient Features
 
-To learn more about Next.js, take a look at the following resources:
+- **Homepage:** Clean and informative landing page.
+- **Booking System:**
+    - Calendar-based UI with availability color codes.
+    - Book an appointment by selecting a date,available hour and entering your details.
+- **Feedback:**
+    - Booked slots disappear until the dentist approves the booking.
+    - Canceled bookings reopen the slot instantly.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 👩‍⚕️ Admin Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Schedule Management:**
+    - Toggle days as working/non-working.
+    - Apply presets, add 30-min / 1-hour / custom slots.
+    - Manage dentist availability visually.
+- **User Management:**
+    - View, create, update, and delete users.
+    - Create users with role, name, email, password via modal.
+- **Booking Moderation:**
+    - Approve/cancel bookings.
+    - Provide reasons for cancellation.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📸 Visual Previews
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Check the [`preview/`](./preview/) folder for full GIF walkthroughes and UI screenshots.
+
+---
+
+## Setup Instructions
+
+### Prerequisites
+
+- Node.js 18+
+- Backend API running (see [Beti Dental Backend](https://github.com/dandr94/beti-dental-backend))
+
+### Installation Steps
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
+
+2. Install Dependencies:
+
+    ```bash
+    npm install
+
+3. Create a .env File:
+
+   Create a .env file in the project root with the following required environment variables:
+
+    ```bash
+    NEXT_PUBLIC_HOST=http://localhost:8000
+    NEXT_PUBLIC_HOST_PUBLIC_PREFIX=api # default
+    NEXT_PUBLIC_HOST_PRIVATE_PREFIX=administration # default
+
+Adjust the values according to your environment.
+
+4. Start development server
+
+    ```bash
+    npm run dev
