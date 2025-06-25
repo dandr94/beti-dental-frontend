@@ -48,7 +48,7 @@ appointments, schedules, and users.
 
 ## 📸 Visual Previews
 
-Check the [`preview/`](./preview/) folder for full GIF walkthroughes and UI screenshots.
+Check the [PREVIEW](preview/) folder for full GIF walkthroughes and UI screenshots.
 
 ---
 
