@@ -6,6 +6,12 @@ appointments, schedules, and users.
 
 ---
 
+> ⚠️ **Work in Progress**
+>
+> This project is still under development. Some features are incomplete, and parts of the codebase and file structure may require further cleanup and organization.
+
+---
+
 ## 🧠 Overview of Stack
 
 - **Next.js**.
